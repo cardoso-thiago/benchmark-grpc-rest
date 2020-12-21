@@ -1,0 +1,237 @@
+# JMH version: 1.27
+# VM version: JDK 11.0.4, OpenJDK 64-Bit Server VM, 11.0.4+10-b304.77
+# VM invoker: /opt/idea-IU-192.7142.36/jbr/bin/java
+# VM options: -javaagent:/opt/idea-IU-192.7142.36/lib/idea_rt.jar=38321:/opt/idea-IU-192.7142.36/bin -Dfile.encoding=UTF-8
+# JMH blackhole mode: full blackhole + dont-inline hint
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: br.com.cardoso.grpc.GrpcCall.callGrpcServer
+
+# Run progress: 0,00% complete, ETA 00:03:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,131 ±(99.9%) 0,013 ms/op
+# Warmup Iteration   2: 0,111 ±(99.9%) 0,002 ms/op
+# Warmup Iteration   3: 0,107 ±(99.9%) 0,001 ms/op
+# Warmup Iteration   4: 0,120 ±(99.9%) 0,002 ms/op
+# Warmup Iteration   5: 0,124 ±(99.9%) 0,012 ms/op
+Iteration   1: 0,118 ±(99.9%) 0,001 ms/op
+                 callGrpcServer·p0.00:   0,082 ms/op
+                 callGrpcServer·p0.50:   0,112 ms/op
+                 callGrpcServer·p0.90:   0,138 ms/op
+                 callGrpcServer·p0.95:   0,150 ms/op
+                 callGrpcServer·p0.99:   0,182 ms/op
+                 callGrpcServer·p0.999:  0,331 ms/op
+                 callGrpcServer·p0.9999: 9,397 ms/op
+                 callGrpcServer·p1.00:   12,157 ms/op
+
+Iteration   2: 0,117 ±(99.9%) 0,002 ms/op
+                 callGrpcServer·p0.00:   0,082 ms/op
+                 callGrpcServer·p0.50:   0,112 ms/op
+                 callGrpcServer·p0.90:   0,137 ms/op
+                 callGrpcServer·p0.95:   0,149 ms/op
+                 callGrpcServer·p0.99:   0,177 ms/op
+                 callGrpcServer·p0.999:  0,293 ms/op
+                 callGrpcServer·p0.9999: 9,403 ms/op
+                 callGrpcServer·p1.00:   13,451 ms/op
+
+Iteration   3: 0,118 ±(99.9%) 0,001 ms/op
+                 callGrpcServer·p0.00:   0,081 ms/op
+                 callGrpcServer·p0.50:   0,113 ms/op
+                 callGrpcServer·p0.90:   0,138 ms/op
+                 callGrpcServer·p0.95:   0,150 ms/op
+                 callGrpcServer·p0.99:   0,181 ms/op
+                 callGrpcServer·p0.999:  0,304 ms/op
+                 callGrpcServer·p0.9999: 9,432 ms/op
+                 callGrpcServer·p1.00:   13,287 ms/op
+
+Iteration   4: 0,117 ±(99.9%) 0,001 ms/op
+                 callGrpcServer·p0.00:   0,082 ms/op
+                 callGrpcServer·p0.50:   0,111 ms/op
+                 callGrpcServer·p0.90:   0,136 ms/op
+                 callGrpcServer·p0.95:   0,148 ms/op
+                 callGrpcServer·p0.99:   0,178 ms/op
+                 callGrpcServer·p0.999:  0,318 ms/op
+                 callGrpcServer·p0.9999: 9,740 ms/op
+                 callGrpcServer·p1.00:   11,256 ms/op
+
+Iteration   5: 0,118 ±(99.9%) 0,002 ms/op
+                 callGrpcServer·p0.00:   0,082 ms/op
+                 callGrpcServer·p0.50:   0,113 ms/op
+                 callGrpcServer·p0.90:   0,138 ms/op
+                 callGrpcServer·p0.95:   0,150 ms/op
+                 callGrpcServer·p0.99:   0,178 ms/op
+                 callGrpcServer·p0.999:  0,273 ms/op
+                 callGrpcServer·p0.9999: 9,698 ms/op
+                 callGrpcServer·p1.00:   11,436 ms/op
+
+
+
+Result "br.com.cardoso.grpc.GrpcCall.callGrpcServer":
+  N = 424549
+  mean =      0,118 ±(99.9%) 0,001 ms/op
+
+  Histogram, ms/op:
+    [ 0,000,  1,250) = 424405 
+    [ 1,250,  2,500) = 52 
+    [ 2,500,  3,750) = 12 
+    [ 3,750,  5,000) = 6 
+    [ 5,000,  6,250) = 10 
+    [ 6,250,  7,500) = 5 
+    [ 7,500,  8,750) = 6 
+    [ 8,750, 10,000) = 22 
+    [10,000, 11,250) = 19 
+    [11,250, 12,500) = 7 
+    [12,500, 13,750) = 5 
+    [13,750, 15,000) = 0 
+    [15,000, 16,250) = 0 
+    [16,250, 17,500) = 0 
+    [17,500, 18,750) = 0 
+
+  Percentiles, ms/op:
+      p(0,0000) =      0,081 ms/op
+     p(50,0000) =      0,112 ms/op
+     p(90,0000) =      0,137 ms/op
+     p(95,0000) =      0,150 ms/op
+     p(99,0000) =      0,179 ms/op
+     p(99,9000) =      0,303 ms/op
+     p(99,9900) =      9,390 ms/op
+     p(99,9990) =     12,809 ms/op
+     p(99,9999) =     13,451 ms/op
+    p(100,0000) =     13,451 ms/op
+
+
+# JMH version: 1.27
+# VM version: JDK 11.0.4, OpenJDK 64-Bit Server VM, 11.0.4+10-b304.77
+# VM invoker: /opt/idea-IU-192.7142.36/jbr/bin/java
+# VM options: -javaagent:/opt/idea-IU-192.7142.36/lib/idea_rt.jar=38321:/opt/idea-IU-192.7142.36/bin -Dfile.encoding=UTF-8
+# JMH blackhole mode: full blackhole + dont-inline hint
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: br.com.cardoso.rest.RestCall.callRestApi
+
+# Run progress: 50,00% complete, ETA 00:01:41
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,218 ±(99.9%) 0,010 ms/op
+# Warmup Iteration   2: 0,139 ±(99.9%) 0,002 ms/op
+# Warmup Iteration   3: 0,141 ±(99.9%) 0,002 ms/op
+# Warmup Iteration   4: 0,140 ±(99.9%) 0,002 ms/op
+# Warmup Iteration   5: 0,147 ±(99.9%) 0,014 ms/op
+Iteration   1: 0,139 ±(99.9%) 0,002 ms/op
+                 callRestApi·p0.00:   0,107 ms/op
+                 callRestApi·p0.50:   0,130 ms/op
+                 callRestApi·p0.90:   0,164 ms/op
+                 callRestApi·p0.95:   0,190 ms/op
+                 callRestApi·p0.99:   0,246 ms/op
+                 callRestApi·p0.999:  0,428 ms/op
+                 callRestApi·p0.9999: 7,830 ms/op
+                 callRestApi·p1.00:   11,010 ms/op
+
+Iteration   2: 0,139 ±(99.9%) 0,001 ms/op
+                 callRestApi·p0.00:   0,107 ms/op
+                 callRestApi·p0.50:   0,131 ms/op
+                 callRestApi·p0.90:   0,164 ms/op
+                 callRestApi·p0.95:   0,190 ms/op
+                 callRestApi·p0.99:   0,244 ms/op
+                 callRestApi·p0.999:  0,374 ms/op
+                 callRestApi·p0.9999: 8,135 ms/op
+                 callRestApi·p1.00:   10,879 ms/op
+
+Iteration   3: 0,145 ±(99.9%) 0,002 ms/op
+                 callRestApi·p0.00:   0,106 ms/op
+                 callRestApi·p0.50:   0,132 ms/op
+                 callRestApi·p0.90:   0,175 ms/op
+                 callRestApi·p0.95:   0,201 ms/op
+                 callRestApi·p0.99:   0,284 ms/op
+                 callRestApi·p0.999:  0,764 ms/op
+                 callRestApi·p0.9999: 9,244 ms/op
+                 callRestApi·p1.00:   11,682 ms/op
+
+Iteration   4: 0,175 ±(99.9%) 0,003 ms/op
+                 callRestApi·p0.00:   0,110 ms/op
+                 callRestApi·p0.50:   0,139 ms/op
+                 callRestApi·p0.90:   0,242 ms/op
+                 callRestApi·p0.95:   0,341 ms/op
+                 callRestApi·p0.99:   0,676 ms/op
+                 callRestApi·p0.999:  1,307 ms/op
+                 callRestApi·p0.9999: 10,421 ms/op
+                 callRestApi·p1.00:   12,288 ms/op
+
+Iteration   5: 0,167 ±(99.9%) 0,003 ms/op
+                 callRestApi·p0.00:   0,109 ms/op
+                 callRestApi·p0.50:   0,144 ms/op
+                 callRestApi·p0.90:   0,210 ms/op
+                 callRestApi·p0.95:   0,251 ms/op
+                 callRestApi·p0.99:   0,510 ms/op
+                 callRestApi·p0.999:  1,336 ms/op
+                 callRestApi·p0.9999: 10,707 ms/op
+                 callRestApi·p1.00:   16,171 ms/op
+
+
+
+Result "br.com.cardoso.rest.RestCall.callRestApi":
+  N = 329238
+  mean =      0,152 ±(99.9%) 0,001 ms/op
+
+  Histogram, ms/op:
+    [ 0,000,  1,250) = 329006 
+    [ 1,250,  2,500) = 113 
+    [ 2,500,  3,750) = 31 
+    [ 3,750,  5,000) = 16 
+    [ 5,000,  6,250) = 15 
+    [ 6,250,  7,500) = 7 
+    [ 7,500,  8,750) = 11 
+    [ 8,750, 10,000) = 17 
+    [10,000, 11,250) = 10 
+    [11,250, 12,500) = 10 
+    [12,500, 13,750) = 1 
+    [13,750, 15,000) = 0 
+    [15,000, 16,250) = 1 
+    [16,250, 17,500) = 0 
+    [17,500, 18,750) = 0 
+
+  Percentiles, ms/op:
+      p(0,0000) =      0,106 ms/op
+     p(50,0000) =      0,134 ms/op
+     p(90,0000) =      0,188 ms/op
+     p(95,0000) =      0,223 ms/op
+     p(99,0000) =      0,411 ms/op
+     p(99,9000) =      1,049 ms/op
+     p(99,9900) =      8,948 ms/op
+     p(99,9990) =     12,269 ms/op
+     p(99,9999) =     16,171 ms/op
+    p(100,0000) =     16,171 ms/op
+
+
+# Run complete. Total time: 00:03:22
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                    Mode     Cnt   Score   Error  Units
+b.c.c.grpc.GrpcCall.callGrpcServer                         sample  424549   0,118 ± 0,001  ms/op
+b.c.c.grpc.GrpcCall.callGrpcServer:callGrpcServer·p0.00    sample           0,081          ms/op
+b.c.c.grpc.GrpcCall.callGrpcServer:callGrpcServer·p0.50    sample           0,112          ms/op
+b.c.c.grpc.GrpcCall.callGrpcServer:callGrpcServer·p0.90    sample           0,137          ms/op
+b.c.c.grpc.GrpcCall.callGrpcServer:callGrpcServer·p0.95    sample           0,150          ms/op
+b.c.c.grpc.GrpcCall.callGrpcServer:callGrpcServer·p0.99    sample           0,179          ms/op
+b.c.c.grpc.GrpcCall.callGrpcServer:callGrpcServer·p0.999   sample           0,303          ms/op
+b.c.c.grpc.GrpcCall.callGrpcServer:callGrpcServer·p0.9999  sample           9,390          ms/op
+b.c.c.grpc.GrpcCall.callGrpcServer:callGrpcServer·p1.00    sample          13,451          ms/op
+b.c.c.rest.RestCall.callRestApi                            sample  329238   0,152 ± 0,001  ms/op
+b.c.c.rest.RestCall.callRestApi:callRestApi·p0.00          sample           0,106          ms/op
+b.c.c.rest.RestCall.callRestApi:callRestApi·p0.50          sample           0,134          ms/op
+b.c.c.rest.RestCall.callRestApi:callRestApi·p0.90          sample           0,188          ms/op
+b.c.c.rest.RestCall.callRestApi:callRestApi·p0.95          sample           0,223          ms/op
+b.c.c.rest.RestCall.callRestApi:callRestApi·p0.99          sample           0,411          ms/op
+b.c.c.rest.RestCall.callRestApi:callRestApi·p0.999         sample           1,049          ms/op
+b.c.c.rest.RestCall.callRestApi:callRestApi·p0.9999        sample           8,948          ms/op
+b.c.c.rest.RestCall.callRestApi:callRestApi·p1.00          sample          16,171          ms/op

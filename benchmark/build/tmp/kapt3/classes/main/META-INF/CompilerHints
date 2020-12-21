@@ -1,0 +1,10 @@
+dontinline,*.*_all_jmhStub
+dontinline,*.*_avgt_jmhStub
+dontinline,*.*_sample_jmhStub
+dontinline,*.*_ss_jmhStub
+dontinline,*.*_thrpt_jmhStub
+inline,br/com/cardoso/grpc/GrpcCall.callGrpcServer
+inline,br/com/cardoso/grpc/GrpcCall.doSetup
+inline,br/com/cardoso/grpc/GrpcCall.tearDown
+inline,br/com/cardoso/rest/RestCall.callRestApi
+inline,br/com/cardoso/rest/RestCall.doSetup

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/benchmark.iml" filepath="$PROJECT_DIR$/.idea/modules/benchmark.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/benchmark.main.iml" filepath="$PROJECT_DIR$/.idea/modules/benchmark.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/benchmark.test.iml" filepath="$PROJECT_DIR$/.idea/modules/benchmark.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/br.com.cardoso.benchmark.main.iml" filepath="$PROJECT_DIR$/.idea/modules/br.com.cardoso.benchmark.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/br.com.cardoso.benchmark.test.iml" filepath="$PROJECT_DIR$/.idea/modules/br.com.cardoso.benchmark.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/br.com.cardoso.grpc-server.main.iml" filepath="$PROJECT_DIR$/.idea/modules/br.com.cardoso.grpc-server.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/br.com.cardoso.grpc-server.test.iml" filepath="$PROJECT_DIR$/.idea/modules/br.com.cardoso.grpc-server.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/br.com.cardoso.rest-api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/br.com.cardoso.rest-api.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/br.com.cardoso.rest-api.test.iml" filepath="$PROJECT_DIR$/.idea/modules/br.com.cardoso.rest-api.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/grpc-server.iml" filepath="$PROJECT_DIR$/.idea/modules/grpc-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/grpc-server.main.iml" filepath="$PROJECT_DIR$/.idea/modules/grpc-server.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/grpc-server.test.iml" filepath="$PROJECT_DIR$/.idea/modules/grpc-server.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rest-api.iml" filepath="$PROJECT_DIR$/.idea/modules/rest-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rest-api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/rest-api.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rest-api.test.iml" filepath="$PROJECT_DIR$/.idea/modules/rest-api.test.iml" />
+    </modules>
+  </component>
+</project>

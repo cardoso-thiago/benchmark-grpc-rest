@@ -1,0 +1,2 @@
+JMH S 28 br.com.cardoso.grpc.GrpcCall S 65 br.com.cardoso.grpc.jmh_generated.GrpcCall_callGrpcServer_jmhTest S 14 callGrpcServer S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
+JMH S 28 br.com.cardoso.rest.RestCall S 62 br.com.cardoso.rest.jmh_generated.RestCall_callRestApi_jmhTest S 11 callRestApi S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 

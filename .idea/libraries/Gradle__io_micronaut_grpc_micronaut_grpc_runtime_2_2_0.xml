@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.micronaut.grpc:micronaut-grpc-runtime:2.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut.grpc/micronaut-grpc-runtime/2.2.0/1ed2e5c0f592d2f92eab105f60293f0c1cab6e92/micronaut-grpc-runtime-2.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut.grpc/micronaut-grpc-runtime/2.2.0/1ed2e5c0f592d2f92eab105f60293f0c1cab6e92/micronaut-grpc-runtime-2.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

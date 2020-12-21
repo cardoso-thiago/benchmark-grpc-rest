@@ -1,0 +1,7 @@
+= Análise de performance de execução utilizando o https://github.com/openjdk/jmh[JMH]
+
+Os resultados do benchmark estão na pasta *results*, onde:
+
+- Average time: tempo médio por operação (menor é melhor)
+- Sample time: dá o tempo para cada operação (menor é melhor)
+- Throughput: operações por unidade de tempo (maior é melhor)

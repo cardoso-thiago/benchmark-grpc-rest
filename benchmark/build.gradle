@@ -1,0 +1,73 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '1.4.10'
+    id "org.jetbrains.kotlin.kapt" version "1.4.10"
+    id 'com.google.protobuf' version '0.8.13'
+}
+
+group 'br.com.cardoso'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    compile "org.jetbrains.kotlin:kotlin-reflect:1.4.10"
+    implementation("javax.annotation:javax.annotation-api:1.3.2")
+    compile group: 'org.openjdk.jmh', name: 'jmh-core', version: '1.27'
+    kapt group: 'org.openjdk.jmh', name: 'jmh-generator-annprocess', version: '1.27'
+    implementation "io.grpc:grpc-protobuf:1.34.1"
+    implementation "io.grpc:grpc-stub:1.34.1"
+    implementation "com.google.protobuf:protobuf-java-util:3.12.0"
+    runtimeOnly "io.grpc:grpc-netty-shaded:1.34.1"
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "11"
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "11"
+}
+
+sourceSets {
+    getByName("main").java.srcDirs(
+            "src/main/kotlin",
+            "build/generated/source/proto/main/java",
+            "build/generated/source/proto/main/grpc")
+    getByName("main").proto.srcDirs(
+            "src/main/kotlin",
+            "build/generated/source/proto/main/java",
+            "build/generated/source/proto/main/grpc")
+}
+
+protobuf {
+    protoc {
+        artifact = "com.google.protobuf:protoc:3.14.0"
+    }
+    plugins {
+        grpc {
+            artifact = "io.grpc:protoc-gen-grpc-java:1.33.1"
+        }
+    }
+    generateProtoTasks {
+        ofSourceSet("main").forEach {
+            it.plugins {
+                // Apply the "grpc" plugin whose spec is defined above, without options.
+                grpc
+            }
+        }
+    }
+}
+task runClient(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    main = 'br.com.cardoso.grpc.client.AlphabetClient'
+}
+
+task alphabetClient(type: CreateStartScripts) {
+    mainClassName = "br.com.cardoso.grpc.client.AlphabetClient"
+    applicationName = "alphabet-client"
+    outputDir = new File(project.buildDir, 'tmp')
+    classpath = jar.outputs.files + project.configurations.runtime
+}

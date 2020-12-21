@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.micronaut.kotlin:micronaut-kotlin-runtime:2.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut.kotlin/micronaut-kotlin-runtime/2.2.0/b8b24a7e5ea4d68afd6edc283f2b1f944bbf2cc7/micronaut-kotlin-runtime-2.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut.kotlin/micronaut-kotlin-runtime/2.2.0/2969224a2885fa6937cce61e8dafe572ebc9a037/micronaut-kotlin-runtime-2.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

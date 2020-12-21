@@ -1,0 +1,6 @@
+micronaut:
+  application:
+    name: grpcServer
+grpc:
+  server:
+    port: 9999
