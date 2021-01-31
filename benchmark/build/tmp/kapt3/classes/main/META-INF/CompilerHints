@@ -8,3 +8,5 @@ inline,br/com/cardoso/grpc/GrpcCall.doSetup
 inline,br/com/cardoso/grpc/GrpcCall.tearDown
 inline,br/com/cardoso/rest/RestCall.callRestApi
 inline,br/com/cardoso/rest/RestCall.doSetup
+inline,br/com/cardoso/rest/RestHttp2Call.callRestApi
+inline,br/com/cardoso/rest/RestHttp2Call.doSetup

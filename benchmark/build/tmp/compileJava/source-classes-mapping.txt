@@ -4,32 +4,52 @@ br/com/cardoso/rest/jmh_generated/RestCall_jmhType_B3.java
  br.com.cardoso.rest.jmh_generated.RestCall_jmhType_B3
 br/com/cardoso/grpc/jmh_generated/GrpcCall_jmhType_B1.java
  br.com.cardoso.grpc.jmh_generated.GrpcCall_jmhType_B1
+br/com/cardoso/rest/jmh_generated/RestHttp2Call_jmhType_B1.java
+ br.com.cardoso.rest.jmh_generated.RestHttp2Call_jmhType_B1
 br/com/cardoso/rest/jmh_generated/RestCall_InitialState_jmhType_B2.java
  br.com.cardoso.rest.jmh_generated.RestCall_InitialState_jmhType_B2
 br/com/cardoso/AlphabetReply.java
  br.com.cardoso.AlphabetReply
  br.com.cardoso.AlphabetReply$1
  br.com.cardoso.AlphabetReply$Builder
-br/com/cardoso/grpc/jmh_generated/GrpcCall_jmhType_B2.java
- br.com.cardoso.grpc.jmh_generated.GrpcCall_jmhType_B2
-br/com/cardoso/rest/jmh_generated/RestCall_InitialState_jmhType_B1.java
- br.com.cardoso.rest.jmh_generated.RestCall_InitialState_jmhType_B1
 br/com/cardoso/AlphabetReplyOrBuilder.java
  br.com.cardoso.AlphabetReplyOrBuilder
-br/com/cardoso/rest/jmh_generated/RestCall_jmhType.java
- br.com.cardoso.rest.jmh_generated.RestCall_jmhType
-br/com/cardoso/grpc/jmh_generated/GrpcCall_jmhType_B3.java
- br.com.cardoso.grpc.jmh_generated.GrpcCall_jmhType_B3
+br/com/cardoso/rest/jmh_generated/RestHttp2Call_callRestApi_jmhTest.java
+ br.com.cardoso.rest.jmh_generated.RestHttp2Call_callRestApi_jmhTest
+br/com/cardoso/rest/jmh_generated/RestHttp2Call_InitialState_jmhType_B1.java
+ br.com.cardoso.rest.jmh_generated.RestHttp2Call_InitialState_jmhType_B1
 br/com/cardoso/rest/jmh_generated/RestCall_InitialState_jmhType.java
  br.com.cardoso.rest.jmh_generated.RestCall_InitialState_jmhType
 br/com/cardoso/grpc/jmh_generated/GrpcCall_callGrpcServer_jmhTest.java
  br.com.cardoso.grpc.jmh_generated.GrpcCall_callGrpcServer_jmhTest
 br/com/cardoso/rest/jmh_generated/RestCall_jmhType_B1.java
  br.com.cardoso.rest.jmh_generated.RestCall_jmhType_B1
-br/com/cardoso/rest/jmh_generated/RestCall_jmhType_B2.java
- br.com.cardoso.rest.jmh_generated.RestCall_jmhType_B2
+br/com/cardoso/rest/jmh_generated/RestHttp2Call_InitialState_jmhType_B2.java
+ br.com.cardoso.rest.jmh_generated.RestHttp2Call_InitialState_jmhType_B2
 br/com/cardoso/rest/jmh_generated/RestCall_callRestApi_jmhTest.java
  br.com.cardoso.rest.jmh_generated.RestCall_callRestApi_jmhTest
+br/com/cardoso/AlphabetService.java
+ br.com.cardoso.AlphabetService
+br/com/cardoso/rest/jmh_generated/RestHttp2Call_jmhType_B2.java
+ br.com.cardoso.rest.jmh_generated.RestHttp2Call_jmhType_B2
+br/com/cardoso/rest/jmh_generated/RestCall_InitialState_jmhType_B3.java
+ br.com.cardoso.rest.jmh_generated.RestCall_InitialState_jmhType_B3
+br/com/cardoso/rest/jmh_generated/RestHttp2Call_InitialState_jmhType_B3.java
+ br.com.cardoso.rest.jmh_generated.RestHttp2Call_InitialState_jmhType_B3
+br/com/cardoso/grpc/jmh_generated/GrpcCall_jmhType_B2.java
+ br.com.cardoso.grpc.jmh_generated.GrpcCall_jmhType_B2
+br/com/cardoso/rest/jmh_generated/RestCall_InitialState_jmhType_B1.java
+ br.com.cardoso.rest.jmh_generated.RestCall_InitialState_jmhType_B1
+br/com/cardoso/rest/jmh_generated/RestCall_jmhType.java
+ br.com.cardoso.rest.jmh_generated.RestCall_jmhType
+br/com/cardoso/rest/jmh_generated/RestHttp2Call_jmhType.java
+ br.com.cardoso.rest.jmh_generated.RestHttp2Call_jmhType
+br/com/cardoso/rest/jmh_generated/RestHttp2Call_jmhType_B3.java
+ br.com.cardoso.rest.jmh_generated.RestHttp2Call_jmhType_B3
+br/com/cardoso/grpc/jmh_generated/GrpcCall_jmhType_B3.java
+ br.com.cardoso.grpc.jmh_generated.GrpcCall_jmhType_B3
+br/com/cardoso/rest/jmh_generated/RestCall_jmhType_B2.java
+ br.com.cardoso.rest.jmh_generated.RestCall_jmhType_B2
 br/com/cardoso/GrpcAlphabetServiceGrpc.java
  br.com.cardoso.GrpcAlphabetServiceGrpc
  br.com.cardoso.GrpcAlphabetServiceGrpc$1
@@ -43,7 +63,5 @@ br/com/cardoso/GrpcAlphabetServiceGrpc.java
  br.com.cardoso.GrpcAlphabetServiceGrpc$GrpcAlphabetServiceMethodDescriptorSupplier
  br.com.cardoso.GrpcAlphabetServiceGrpc$GrpcAlphabetServiceStub
  br.com.cardoso.GrpcAlphabetServiceGrpc$MethodHandlers
-br/com/cardoso/AlphabetService.java
- br.com.cardoso.AlphabetService
-br/com/cardoso/rest/jmh_generated/RestCall_InitialState_jmhType_B3.java
- br.com.cardoso.rest.jmh_generated.RestCall_InitialState_jmhType_B3
+br/com/cardoso/rest/jmh_generated/RestHttp2Call_InitialState_jmhType.java
+ br.com.cardoso.rest.jmh_generated.RestHttp2Call_InitialState_jmhType

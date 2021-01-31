@@ -5,3 +5,26 @@ Os resultados do benchmark estão na pasta *results*, onde:
 - Average time: tempo médio por operação (menor é melhor)
 - Sample time: dá o tempo para cada operação (menor é melhor)
 - Throughput: operações por unidade de tempo (maior é melhor)
+
+== Como Executar
+
+Esse sample está configurado para executar apenas o Sample Time. Para alterar o tipo de teste, basta acessar a classe *BenchmarkConfig* do projeto *benchmark* e alterar o *Benchmark Mode* para o modo desejado. Na classe principal desse mesmo projeto, você pode alterar o output para refletir o tipo de teste realizado. O output configura em que arquivo os resultados serão escritos.
+
+Você pode alterar o modo para os seguintes tipos:
+
+* AverageTime
+* SampleTime
+* Throughput
+* All (para execução de todos os modos em uma execução única)
+
+== Resumo dos Resultados (Com base no Sample Time)
+
+* gRPC
+** Quantidade de Transações Realizadas: 399934
+** Tempo Aproximado de Execução da Maioria das Transações: 0,125ms
+* HTTP
+** Quantidade de Transações Realizadas: 304981
+** Tempo Aproximado de Execução da Maioria das Transações: 0,164ms
+* HTTP2
+** Quantidade de Transações Realizadas: 310985
+** Tempo Aproximado de Execução da Maioria das Transações: 0,160ms
